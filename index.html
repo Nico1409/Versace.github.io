@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="h-full" lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+  </head>
+  <body class="h-full">
+    <div class="flex flex-col h-full">
+      <!-- Navbar -->
+      <nav
+        class="bg-gray-100 flex flex-col sm:flex-row justify-center items-center border-b-4 border-gray-500 mb-4"
+      >
+        <img class="w-20 m-3" src="logo.png" alt="" />
+        <ul class="flex flex-col sm:flex-row">
+          <li class="p-3"><button>Home</button></li>
+          <li class="p-3"><button onclick="formulario()">Formulario</button></li>
+          <li class="p-3">
+            <button onclick="carrito()">Carrito</button>
+          </li>
+        </ul>
+      </nav>
+      <!-- Contenedor -->
+      <div
+        class="sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid grid-cols gap-6"
+        id="contenedor"
+      ></div>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
